@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My student page</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body> 
+  <h1>My student page</h1>
+  <p id="message" >I am learning java script</p>
+  <p id="pagestatus">Waiting for the page to load...</p>
+  <button id="hellobutton" onclick="sayhello()">Say hello</button>
+  <button id="namebutton">Enter my name</button>
+  <button id="messagebutton" onclick="change()">Change my message</button>
+  <div id="hoverbox" .onmouseover="mouseover()" >Move your mouse here</div>
+  <ul>
+    <Li>Drawing</Li>
+    <li>Coding</li>
+    <li>Thrifting</li>
+    </ul>
+    <script>
+    function sayhello(){
+      alert ("Welcom to my page");
+    }
+    function change(){
+      document.getElementById("message").innerHTML="I can make my page interactive";
+      
+    }
+    function mouseover(){
+        document.getElementById("hoverbox").style.background="orange";
+        document.getElementById("hoverbox").innerHTML="You found me!";
+
+    }
+    function mouseout(){
+        document.getElementById("hoverbox").style.background="gray";
+        document.getElementById("hoverbox").innerHTML="Move your mouse here";
+
+    }
+
+    
+    </script>
+  </body>
+</html>
